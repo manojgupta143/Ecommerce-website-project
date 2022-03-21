@@ -1,0 +1,196 @@
+@media only screen and (max-width: 600px) {
+    section div.cantainer {
+        width: 100%;
+        width: 25rem;
+        text-align: center;
+    }
+    section div.cantainer h1 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+        font-size: 4rem;
+        color: red;
+        padding-top: 30px;
+    }
+    section div.cantainer p {
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 2rem;
+        color: rgb(175, 4, 110);
+        margin-bottom: 40px;
+    }
+    section div.cantainer a {
+        background-color: red;
+        font-size: 2rem;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: aliceblue;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+    section div.cantainer a:hover {
+        background-color: rgb(221, 38, 38);
+    }
+}
+
+
+/* for large size screen*/
+
+.col-md-3 {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.col-md-3 img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-indicators .active {
+    background-color: blue;
+}
+
+body .carousel-indicator li {
+    background-color: blue;
+}
+
+body .carousel-indicators {
+    bottom: 0;
+}
+
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon {
+    background-color: blue;
+}
+
+body .no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 59px;
+}
+
+section div.cantainer {
+    width: 100%;
+    text-align: center;
+    background-color: #cfddeb;
+}
+
+section div.cantainer h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: red;
+    padding-top: 30px;
+}
+
+section div.cantainer p {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2rem;
+    color: rgb(175, 4, 110);
+    margin-bottom: 40px;
+}
+
+section div.cantainer a {
+    background-color: red;
+    font-size: 2rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: aliceblue;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+section div.cantainer a:hover {
+    background-color: rgb(221, 38, 38);
+}
+
+.col {
+    border: 4px solid rgb(105, 103, 100);
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+}
+
+#copy {
+    width: 100%;
+    background-color: rgba(32, 30, 30, 0.884);
+    color: wheat;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+
+/*Css For Prodect*/
+
+#product .hd {
+    text-align: center;
+    font-size: 8vh;
+    color: #057a14;
+    background-color: #bad4ef;
+    padding: 5px;
+}
+
+.col img {
+    width: 100%;
+    height: 230px;
+    margin: 0;
+}
+
+.col h1 {
+    text-align: center;
+    font-size: 5vh;
+    color: red;
+}
+
+.col p {
+    color: white;
+    font-size: 3vh;
+    background-color: #b92626;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.col span {
+    font-size: 3vh;
+    color: #06220e;
+    font-weight: bold;
+}
+
+.col a {
+    background-color: green;
+    color: wheat;
+    padding: 10px 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10vh;
+    margin-bottom: 20px;
+}
+
+.d-inline-flex {
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(228, 243, 212);
+    border: 2px solid rgb(172, 235, 172);
+    color: #772432;
+    font-weight: bold;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.logo {
+    width: 20vh;
+    margin-left: 8px;
+    padding: 5px;
+}
+
+.logo img {
+    width: 100%;
+    height: 10vh;
+}

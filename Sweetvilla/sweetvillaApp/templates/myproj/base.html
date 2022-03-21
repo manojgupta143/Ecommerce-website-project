@@ -1,0 +1,295 @@
+<!doctype html> {% load static %}
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href='{% static "css/home.css" %}'>
+    <title>{% block title_block %} {%endblock%}</title>
+
+
+
+</head>
+
+<body>
+
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-primary fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="# "> Sakshi's Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products List
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item " href="internationalsweet/">International Sweet</a></li>
+                            <li><a class="dropdown-item " href="indiansweet/">Indian Sweets</a></li>
+                            <li><a class="dropdown-item " href="cake/">Cakes</a></li>
+                            <li><a class="dropdown-item " href="icecream/">Ice-Cream</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="punjabisweet/">Punjabi Sweets</a></li>
+                            <li><a class="dropdown-item" href="sauth_indian_sweet/">Sauth Indian Sweets</a></li>
+                            <li><a class="dropdown-item" href="gujratisweet/">Gujraati Sweets</a></li>
+                            <li><a class="dropdown-item" href="bengalisweet/">Bengali Sweets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">Contact Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">Feadback</a>
+                    </li>
+
+                    <div class="">
+                        <a href="#">Signup</a>
+                        <a href="#">Login</a>
+                        <a href="#">Logout</a>
+
+                    </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="demo" class="carousel slide my-3" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{%static 'images/card/c1.jpg'%}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{%static 'images/card/c2.jpg'%}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{%static 'images/card/c3.png'%}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{%static 'images/card/c4.png'%}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{%static 'images/card/c5.png'%}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{%static 'images/card/c6.png'%}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{%static 'images/card/c7.jpg'%}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{%static 'images/card/c8.jpg'%}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{%static 'images/card/c9.png'%}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{%static 'images/card/c10.jpg'%}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{%static 'images/card/c11.jpg'%}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="{%static 'images/card/c12.jpg'%}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev " href="#demo" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+    {% block body_block %} {%endblock%}
+    <footer>
+        <div>
+            <h1>Our Sponsors </h1>
+        </div>
+        <div class="d-inline-flex  ">
+
+            <div class="d-flex flex-row bd-highlight  d-flex justify-content-center">
+
+                <div class="logo">
+
+                    <a href="https://www.honda2wheelersindia.com/"><img src="{% static 'images/logo/l1.png' %}" alt=""></a>
+                </div>
+                <div class="logo">
+
+                    <a href="https://www.skype.com/en/"><img src="{% static 'images/logo/l2.png' %}" alt=""></a>
+                </div>
+                <div class="logo">
+
+                    <a href="https://www.pizzahut.co.in/?utm_source=google&utm_medium=cpc&utm_campaign=iP_Devyani_Search_PR_Brand_Exact&utm_content=Brand&gclid=EAIaIQobChMInpGPhNnW9gIVcplmAh3ObAdGEAAYASAAEgI5z_D_BwE"><img src="{% static 'images/logo/l3.png' %}" alt=""></a>
+                </div>
+
+                <div class="logo">
+
+                    <a href="https://pizzaonline.dominos.co.in/?src=affiliate_collectcent_710&utm_source=affiliate&utm_medium=collectcent&utm_campaign=710"><img src="{% static 'images/logo/l4.png' %}" alt=""></a>
+                </div>
+                <div class="logo">
+
+                    <a href="https://online.kfc.co.in/"><img src="{% static 'images/logo/l5.png' %}" alt=""></a>
+                </div>
+                <div class="logo">
+
+                    <a href="https://www.apple.com/in/?afid=p238%7Cs8Vs8GkTq-dc_mtid_187079nc38483_pcrid_587090939723_pgrid_112258962467_&cid=aos-IN-kwgo-brand--slid---product-"><img src="{% static 'images/logo/l6.png' %}" alt=""></a>
+                </div>
+                <div class="logo">
+
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><img src="{% static 'images/logo/l7.png' %}" alt=""></a>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="copy">
+            <span>Copyright By ManojGuptaSweetVilla.com </span>
+            <span>Created By Manoj Gupta With Help Of L</span>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
