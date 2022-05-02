@@ -1,71 +1,55 @@
-<!doctype html> {%extends "myproj/base.html" %} {% block title_block %}gujratinsweet {%endblock%} {% block body_block %} {%load static %}
+<!doctype html> {%extends "myproj/base.html" %} {% block title_block %}gujrati sweets{%endblock%}{%load static %} {% block body_block %}
 <div id="product">
     <div class="hd">
-        <h1>Products Listed Here</h1>
-    </div>
-    <div class="container">
-        <div class="row ">
-            <div class="col">
-                <img src="{%static 'images/product/p1.png'%}" alt="Cake">
-                <div>
-                    <h1>Cakes</h1>
-                </div>
-                <p> Best Indiaan Creamy Cakes Veg Or Non Veg Variaty For Every Functions </p>
-                <span> Starting At 200-1000</p></span>
-                <a href="/cake/">Order Now</a>
-            </div>
-            <div class="col">
-                <img src="{%static 'images/product/p4.png'%}" alt="Ice-Cream">
-                <div>
-                    <h1>Ice-Cream</h1>
-                </div>
-                <p>Best Deliciouse Ice cream For Weading Parties or Every Ocation Best Creamy</p>
-                <span> Starting At 50-500</p></span>
-                <a href="/icecream/">Order Now</a>
-            </div>
-            <div class="col">
-                <img src="{%static 'images/product/p5.jpg'%}" alt="punjabi sweet">
-                <div>
-                    <h1>Punjabi Sweets </h1>
-                </div>
-                <p>Best Deliciouse Punjabi Deserts Injoy The Life With Punjabi Sweet </p>
-                <span> Starting At 200-1000</p></span>
-                <a href="punjabisweet/">Order Now</a>
-            </div>
-
-        </div>
-    </div>
-    <div class="container">
-        <div class="row ">
-            <div class="col">
-                <img src="{%static 'images/product/p1.png'%}" alt="Cake">
-                <div>
-                    <h1>Cakes</h1>
-                </div>
-                <p> Best Indiaan Creamy Cakes Veg Or Non Veg Variaty For Every Functions </p>
-                <span> Starting At 200-1000</p></span>
-                <a href="/cake/">Order Now</a>
-            </div>
-            <div class="col">
-                <img src="{%static 'images/product/p4.png'%}" alt="Ice-Cream">
-                <div>
-                    <h1>Ice-Cream</h1>
-                </div>
-                <p>Best Deliciouse Ice cream For Weading Parties or Every Ocation Best Creamy</p>
-                <span> Starting At 50-500</p></span>
-                <a href="/icecream/">Order Now</a>
-            </div>
-            <div class="col">
-                <img src="{%static 'images/product/p5.jpg'%}" alt="punjabi sweet">
-                <div>
-                    <h1>Punjabi Sweets </h1>
-                </div>
-                <p>Best Deliciouse Punjabi Deserts Injoy The Life With Punjabi Sweet </p>
-                <span> Starting At 200-1000</p></span>
-                <a href="punjabisweet/">Order Now</a>
-            </div>
-
-        </div>
+        <h1>Best Gujrati Sweet Listed Here</h1>
     </div>
 </div>
-{% endblock %}
+<div class="container" xmlns:data="http://www.w3.org/1999/xhtml">
+    <div id="demo" class="carousel slide my-3" data-ride="carousel">'
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            {% for i in range %}
+            <li data-target="#demo" data-slide-to="{{i}}"></li>
+            {% endfor %}
+        </ul>
+
+        <!--        slideshow starts here-->
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+
+                {% for i in product%}
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src='/media/{{i.images}}' class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{i.prodname}}</h5>
+                            <p class="card-text">{{i.desc|truncatewords:10|title|linebreaks}}</p>
+                            <p class="card-price">{{i.price}}</p>
+                            <div class="btn2">
+                                <button type="button" class="btn btn-primary">Order Now</button>
+                                <button type="button" class="btn btn-danger  cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}
+            </div>
+            <div class="carousel-item">
+                {% endif%} {% endfor %}
+            </div>
+
+        </div>
+    </div>
+
+    <a class="carousel-control-prev " href="#demo" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    {%endblock%}
